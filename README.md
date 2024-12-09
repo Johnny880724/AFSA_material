@@ -5,8 +5,9 @@ An application of the Artificial Fish-Swarm Algorithm (AFSA) to the optimization
 The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
 
 ### Example Usage
-From Ref.[2], material energy raw data can be downloaded, which contains the position data `traj-5A.xyz` and the energy data `traj-5A.prop`. Use the following script
+From Ref.[2], material energy raw data can be downloaded, which contains the position data `traj-5A.xyz` and the energy data `traj-5A.prop`. Extract and store the vectors and energy data with the following code:
 ```python
+from load_data import load_data
 subdirectory = "raw_data/5A/"
 xyz_filename = "traj-5A.xyz"
 prop_filename = "traj-5A.prop"
