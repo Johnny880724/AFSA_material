@@ -15,7 +15,8 @@ In this note we generate a toy model of well in a 2D space to observe the differ
 
 ![contour_plot](https://github.com/Johnny880724/AFSA_material/blob/main/images/Contour_Plot.png)
 
-The gradient descent and AFSA are used to find the global and local minima of a two-dimensional random Gaussian potential.
+The gradient descent and AFSA are used to find the global and local minima of a two-dimensional random Gaussian potential.The evolution of AFSA animation is collectred in the folder called animation.
+
 Here are the parameters of gradient descent:
 ```python
 num_initial_points = 1000 # The number of initial points
