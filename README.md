@@ -17,7 +17,7 @@ max_iterations = 500
 tolerance = 1e-5
 ```
 
-We can get the global and local minima as show below:
+We can get the global and local minima as shown below:
 ![GD](https://github.com/Johnny880724/AFSA_material/blob/main/images/Gradient%20Descent.png)
 
 ## load_data.py
