@@ -17,6 +17,9 @@ max_iterations = 500
 tolerance = 1e-5
 ```
 
+We can get the global and local minima as show below:
+![GD](https://github.com/Johnny880724/AFSA_material/blob/main/images/Gradient%20Descent.pdf)
+
 ## load_data.py
 The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
 
