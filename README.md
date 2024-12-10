@@ -41,8 +41,15 @@ one extra parameter is used to repulse the global minimums and find local minimu
 ```python
 repulsion = 5  # Repulsion of found minimums 
 ```
-We can get the global and local minima as shown below:
+
+We can get the global and local minima by GD as shown below:
 ![GD](https://github.com/Johnny880724/AFSA_material/blob/main/images/Gradient%20Descent.png)
+
+And we can get the evolution of AFSA on 2D well with much smaller amount of iteration shown below:
+![AFSA_GB](https://github.com/Johnny880724/AFSA_material/blob/main/animations/pso_animation_convert.gif)
+
+By observing the repusion, you will find out a possibility of points evolved out to find other local minimums:
+![AFSA_LB](https://github.com/Johnny880724/AFSA_material/blob/main/images/PSO_Local_Minima.png)
 
 ## load_data.py
 The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
