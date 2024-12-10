@@ -39,7 +39,7 @@ boundary_max = 10   # Maximum boundary value
 max_velocity = 1.0  # Maximum velocity
 penalty_factor = 100  # Penalty factor for particles out of bounds
 ```
-one extra parameter is used to repulse the global minimums and find local minimums:
+one extra parameter is used to repulse the fishes AFSA from global minimums and find local minimums:
 ```python
 repulsion = 5  # Repulsion of found minimums 
 ```
@@ -54,10 +54,10 @@ By observing the repusion, you will find out a possibility of points evolved out
 ![AFSA_LB](https://github.com/Johnny880724/AFSA_material/blob/main/images/PSO_Local_Minima.png)
 
 ## load_data.py
-The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
+The `load_data.py` script is used to load and process data from Ref.[2] specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
 
 ### Example Usage
-From Ref.[2], material energy raw data can be downloaded, which contains the position data `traj-5A.xyz` and the energy data `traj-5A.prop`. Extract and store the vectors and energy data with the following code:
+From Ref.[2], material energy raw data can be downloaded, which contains the position data `traj-5A.xyz` and the energy data `traj-5A.prop`. Extract and store the lattice vectors and energy data with the following code:
 ```python
 from load_data import load_data
 subdirectory = "raw_data/5A/"
