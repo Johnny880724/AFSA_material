@@ -4,7 +4,8 @@ This project is aimed at applying Artificial Fish-Swarm Algorithm (AFSA) on find
 
 The minimums (including global minimums) represent the possibility of the stable/metastable states. Due to the traditional methods( i.e. gradient decent) has its own limit, the more methods can be explored make the approach more efficient.
 
-![The x-axis represent the times of each algorithim ask to calculate energy and the y represent the lowest minimums they found.](https://raw.githubusercontent.com/Johnny880724/AFSA_material/refs/heads/main/images/global%20energy%20minimums%20serach%20competition%20between%20GD%20and%20AFSA.png)
+![comparison](https://raw.githubusercontent.com/Johnny880724/AFSA_material/refs/heads/main/images/global%20energy%20minimums%20serach%20competition%20between%20GD%20and%20AFSA.png)
+The x-axis represent the times of each algorithim ask to calculate energy and the y represent the lowest minimums they found.
 
 In this project, we have shown at the following figures, because of the good randomness, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
 
@@ -54,6 +55,8 @@ load_data(subdirectory, xyz_filename, prop_filename, save_filename)
 
 ![contour_plot](https://github.com/Johnny880724/AFSA_material/blob/main/images/Contour_Plot.png)
 
+## Fishs_on_real_crystal.ipynb
+In this note, by applying the GD and non-modified AFSA, we use the crystal data from Ref.[2] to do the search. We applied the gaussian kernel fitting to smooth and interpolate the 9D phase space. And we tuned the parameter at finsh_on material note to compete the efficiency between each algorithm.
 
 ## Reference
 [1] Artificial Fish Swarming Algorithm: https://arxiv.org/abs/2011.05700 <br />
