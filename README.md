@@ -6,6 +6,9 @@ The minimums (including global minimums) represent the possibility of the stable
 
 In this project, we have shown at the following figures. because of the good randomanality, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
 
+## Fishs_on_materials.ipynb
+Several sections included, 
+
 ## load_data.py
 The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
 
