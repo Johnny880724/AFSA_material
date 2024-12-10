@@ -10,6 +10,10 @@ The x-axis represent the times of each algorithim ask to calculate energy and th
 In this project, we have shown at the above figure, because of the good randomness, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
 
 ## Fishs_on_materials.ipynb
+In this note we generate a toy model of well in a 2D space to observe the different behaviour of two algotrithim. The following picture is the example of the 2D gaussian wells in a space.
+
+![contour_plot](https://github.com/Johnny880724/AFSA_material/blob/main/images/Contour_Plot.png)
+
 The gradient descent and AFSA are used to find the global and local minima of a two-dimensional random Gaussian potential.
 Here are the parameters of gradient descent:
 ```python
@@ -53,7 +57,7 @@ save_filename = "crystal_parsed_data/5A_parsed_file.txt"
 load_data(subdirectory, xyz_filename, prop_filename, save_filename)
 ```
 
-![contour_plot](https://github.com/Johnny880724/AFSA_material/blob/main/images/Contour_Plot.png)
+
 
 ## Fishs_on_real_crystal.ipynb
 In this note, by applying the GD and non-modified AFSA, we use the crystal data from Ref.[2] to do the search. We applied the gaussian kernel fitting to smooth and interpolate the 9D phase space. And we tuned the parameter at finsh_on material note to compete the efficiency between each algorithm.
