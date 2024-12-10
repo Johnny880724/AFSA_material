@@ -7,7 +7,15 @@ The minimums (including global minimums) represent the possibility of the stable
 In this project, we have shown at the following figures, because of the good randomness, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
 
 ## Fishs_on_materials.ipynb
-The gradient descent and AFSA are used to find the global and local minima for a two-dimensional random Gaussian functions.
+The gradient descent and AFSA are used to find the global and local minima of a two-dimensional random Gaussian potential.
+Here are the parameters of gradient descent:
+```python
+num_initial_points = 1000 # The number of initial points
+initial_points = np.random.uniform(-10, 10, (num_initial_points, 2))
+learning_rate = 0.1
+max_iterations = 500 
+tolerance = 1e-5
+```
 
 ## load_data.py
 The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
