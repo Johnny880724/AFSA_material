@@ -1,13 +1,14 @@
 # AFSA_material
 
-This project is aimed at applying Artificial Fish-Swarm Algorithm (AFSA) on finding the minimums in the phase space of materials. 
+This project is aimed at applying the Artificial Fish-Swarm Algorithm (AFSA) to find the minima in the configuration space of materials. 
 
-The minimums (including global minimums) represent the possibility of the stable/metastable states. Due to the traditional methods( i.e. gradient decent) has its own limit, the more methods can be explored make the approach more efficient.
+## Introduction
+
+To discover more of technologically relevant, experimentally synthesizable, sufficiently long-lived novel materials, computational exploration of the materials configuration space is beneficial. In the configuration space of a given material, the global and local minima represent the possible ground state and metastable states of matter, relatively. The synthesizability of polymorphs can be assessed by the size of attraction basins. The lifetime of a candidate metastable structure is determined by the energy barrier around the basin. In this project, we focus on identifying candidate polymorphs. 
+The traditional method( i.e. gradient descent approach) consists of random structure sampling and computationally demanding atomic relaxation calculations. For a more efficient methodology, we implemented the ASFA algorithm and its variant and performed a comparative study with the conventional approach. 
 
 ![comparison](https://raw.githubusercontent.com/Johnny880724/AFSA_material/refs/heads/main/images/global%20energy%20minimums%20serach%20competition%20between%20GD%20and%20AFSA.png)
-The x-axis represent the times of each algorithim ask to calculate energy and the y represent the lowest minimums they found.
-
-In this project, we have shown at the above figure, because of the good randomness, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
+The x-axis represents the times of the two algorithms asked to calculate energy and the y represents the lowest minimums they found. We see that because of the good randomness, in the early stage with fewer points, ASFA shows a better performance. The details of each note are described in the following sections.
 
 ## Fishs_on_materials.ipynb
 The gradient descent and AFSA are used to find the global and local minima of a two-dimensional random Gaussian potential.
@@ -31,7 +32,7 @@ boundary_max = 10   # Maximum boundary value
 max_velocity = 1.0  # Maximum velocity
 penalty_factor = 100  # Penalty factor for particles out of bounds
 ```
-one extra parameter is used to repulse the global minimums and find local minimums:
+one extra parameter is used to repulse AFs from the global minimums and find local minimums:
 ```python
 repulsion = 5  # Repulsion of found minimums 
 ```
@@ -39,10 +40,10 @@ We can get the global and local minima as shown below:
 ![GD](https://github.com/Johnny880724/AFSA_material/blob/main/images/Gradient%20Descent.png)
 
 ## load_data.py
-The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
+The `load_data.py` script is used to load and process data (from Ref.[2]) from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
 
 ### Example Usage
-From Ref.[2], material energy raw data can be downloaded, which contains the position data `traj-5A.xyz` and the energy data `traj-5A.prop`. Extract and store the vectors and energy data with the following code:
+From Ref.[2], material energy raw data can be downloaded, which contains the position data `traj-5A.xyz` and the energy data `traj-5A.prop`. Extract and store the lattice vectors and energy data with the following code:
 ```python
 from load_data import load_data
 subdirectory = "raw_data/5A/"
@@ -60,6 +61,6 @@ In this note, by applying the GD and non-modified AFSA, we use the crystal data 
 
 ## Reference
 [1] Artificial Fish Swarming Algorithm: https://arxiv.org/abs/2011.05700 <br />
-[2] ML on crystal: https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc04665k <br />
+[2] ML on molecular crystal: https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc04665k <br />
 [3] Fish sworm csdn: https://blog.csdn.net/hba646333407/article/details/103082418 <br />
 [4] Smoothed particle hydrodyanmics: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract
