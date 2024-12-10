@@ -16,7 +16,22 @@ learning_rate = 0.1
 max_iterations = 500 
 tolerance = 1e-5
 ```
-
+Here are the parameters of AFSA:
+```python
+num_particles = 30  # Number of particles
+max_iterations = 30  # Maximum number of iterations
+w = 0.5  # Inertia weight
+c1 = 1.5  # Self-attraction coefficient
+c2 = 1.5  # Group-attraction coefficient
+boundary_min = -10  # Minimum boundary value
+boundary_max = 10   # Maximum boundary value
+max_velocity = 1.0  # Maximum velocity
+penalty_factor = 100  # Penalty factor for particles out of bounds
+```
+one extra parameter is used to repulse the global minimums and find local minimums:
+```python
+repulsion = 5  # Repulsion of found minimums 
+```
 We can get the global and local minima as shown below:
 ![GD](https://github.com/Johnny880724/AFSA_material/blob/main/images/Gradient%20Descent.png)
 
