@@ -4,6 +4,8 @@ This project is aimed at applying Artificial Fish-Swarm Algorithm (AFSA) on find
 
 The minimums (including global minimums) represent the possibility of the stable/metastable states. Due to the traditional methods( i.e. gradient decent) has its own limit, the more methods can be explored make the approach more efficient.
 
+![The x-axis represent the times of each algorithim ask to calculate energy and the y represent the lowest minimums they found.](https://raw.githubusercontent.com/Johnny880724/AFSA_material/refs/heads/main/images/global%20energy%20minimums%20serach%20competition%20between%20GD%20and%20AFSA.png)
+
 In this project, we have shown at the following figures, because of the good randomness, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
 
 ## Fishs_on_materials.ipynb
