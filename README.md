@@ -1,5 +1,10 @@
 # AFSA_material
-An application of the Artificial Fish-Swarm Algorithm (AFSA) to the optimization of material potential energy.
+
+This project is aimed at applying Artificial Fish-Swarm Algorithm (AFSA) on finding the minimums in the phase space of materials. 
+
+The minimums (including global minimums) represent the possibility of the stable/metastable states. Due to the traditional methods( i.e. gradient decent) has its own limit, the more methods can be explored make the approach more efficient.
+
+In this project, we have shown at the following figures. because of the good randomanality, the early steps with less points, ASFA can reach much better performance. The details of each note are described at the following sub terms.
 
 ## load_data.py
 The `load_data.py` script is used to load and process data from specified subdirectories and filenames. It includes functions to extract lattice vectors from `.xyz` files and lattice energies from `.prop` files.
