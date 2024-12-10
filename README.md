@@ -1,8 +1,10 @@
 # AFSA_material
 
-This project is aimed at applying Artificial Fish-Swarm Algorithm (AFSA) on finding the minimums in the phase space of materials. 
+This project is aimed at applying the Artificial Fish-Swarm Algorithm (AFSA) to find the minima in the configuration space of materials. 
 
 The minimums (including global minimums) represent the possibility of the stable/metastable states. Due to the traditional methods( i.e. gradient decent) has its own limit, the more methods can be explored make the approach more efficient.
+
+To discover more of technologically relevant, experimentally synthesizable, sufficiently long-lived novel materials, computational exploration of the materials configuration space is beneficial. In the configuration space of a given material, the global and local minima represent the possible ground state and metastable states of matter, relatively. The synthesizability of polymorphs can be assessed by the size of attraction basins. The lifetime of a candidate metastable structure is determined by the energy barrier around the basin. In this project, we focus on identifying candidate polymorphs. The traditional method( i.e. gradient descent approach) consists of random structure sampling and computationally demanding atomic relaxation calculations. For a more efficient methodology, we implemented the ASFA algorithm and its variant and performed a comparative study with the conventional approach. 
 
 ![comparison](https://raw.githubusercontent.com/Johnny880724/AFSA_material/refs/heads/main/images/global%20energy%20minimums%20serach%20competition%20between%20GD%20and%20AFSA.png)
 
@@ -73,6 +75,8 @@ In this note, by applying the GD and non-modified AFSA, we use the crystal data 
 
 ## Reference
 [1] Artificial Fish Swarming Algorithm: https://arxiv.org/abs/2011.05700 <br />
-[2] ML on crystal: https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc04665k <br />
-[3] Fish sworm csdn: https://blog.csdn.net/hba646333407/article/details/103082418 <br />
-[4] Smoothed particle hydrodyanmics: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract
+[2] ML on molecular crystal: https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc04665k <br />
+[3] Fish swarm csdn: https://blog.csdn.net/hba646333407/article/details/103082418 <br />
+[4] Smoothed particle hydrodynamics: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract <br />
+[5] random structure sampling and gradient descent approach: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract <br />
+https://pubs.aip.org/aip/apr/article/8/3/031310/124790/Metastable-materials-discovery-in-the-age-of-large
