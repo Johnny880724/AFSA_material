@@ -24,6 +24,7 @@ save_filename = "crystal_parsed_data/5A_parsed_file.txt"
 load_data(subdirectory, xyz_filename, prop_filename, save_filename)
 ```
 
+![contour_plot](https://github.com/Johnny880724/AFSA_material/blob/main/images/Contour_Plot.png)
 
 
 ## Reference
