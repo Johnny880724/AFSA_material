@@ -63,6 +63,6 @@ In this note, by applying the GD and non-modified AFSA, we use the crystal data 
 [1] Artificial Fish Swarming Algorithm: https://arxiv.org/abs/2011.05700 <br />
 [2] ML on molecular crystal: https://pubs.rsc.org/en/content/articlelanding/2018/sc/c7sc04665k <br />
 [3] Fish swarm csdn: https://blog.csdn.net/hba646333407/article/details/103082418 <br />
-[4] Smoothed particle hydrodynamics: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract
-[5] random structure sampling and gradient descent approach: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract
+[4] Smoothed particle hydrodynamics: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract <br />
+[5] random structure sampling and gradient descent approach: https://ui.adsabs.harvard.edu/abs/1992ARA%26A..30..543M/abstract <br />
 https://pubs.aip.org/aip/apr/article/8/3/031310/124790/Metastable-materials-discovery-in-the-age-of-large
